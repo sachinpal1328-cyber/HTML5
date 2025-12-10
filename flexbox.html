@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Flexbox Example</title>
+    <style>
+        /* 1. THE FLEX CONTAINER */
+        .flex-container {
+            display: flex; /* This is the most crucial declaration */
+            flex-direction: row; /* Default: items line up horizontally */
+            justify-content: space-around; /* Distributes space around items */
+            align-items: center; /* Vertically centers items */
+
+            /* Visual styling for the container */
+            width: 80%;
+            height: 200px;
+            margin: 20px auto;
+            background-color: #f0f0f0;
+            border: 2px solid #333;
+        }
+
+        /* 2. THE FLEX ITEMS */
+        .flex-item {
+            /* Flex items don't need 'float', 'display: inline-block', etc. */
+            width: 100px;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Flexbox Demo</h1>
+    <p>The blue boxes below are Flex Items contained within the light gray Flex Container.</p>
+
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+</body>
+</html>
